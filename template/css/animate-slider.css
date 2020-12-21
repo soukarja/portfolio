@@ -1,0 +1,353 @@
+/*------------------------------------------------------*/
+/* FULL WIDTH ANIMATED LAYERS 010
+/*------------------------------------------------------*/
+#fw_al_010 {
+  margin-top: -81px;
+  overflow: hidden;
+  max-height: 658px;
+  position: relative;
+  background: #0b0602;
+}
+#fw_al_010:hover {
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+#fw_al_010:active {
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+#fw_al_010 > .carousel-inner > .carousel-item > img,
+#fw_al_010 > .carousel-inner > .carousel-item > a > img {
+  opacity: 0.3;
+  margin: auto;
+  width: 100% !important;
+}
+/*---------- ROTATE AND SCALE OUT EFFECT ----------*/
+.ps_rotate_scale_o {
+  opacity: 1;
+  -webkit-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+}
+.ps_rotate_scale_o .carousel-item {
+  top: 0;
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  display: block;
+  -webkit-transform: scale(0) rotate(45deg);
+  transform: scale(0) rotate(45deg);
+  -webkit-transition: -webkit-transform 2.5s cubic-bezier(0.22,0.81,0.01,0.99) 0s, opacity cubic-bezier(0.22,0.81,0.01,0.99) 2.5s;
+  transition: transform 2.5s cubic-bezier(0.22,0.81,0.01,0.99) 0s, opacity cubic-bezier(0.22,0.81,0.01,0.99) 2.5s;
+}
+.ps_rotate_scale_o .carousel-item:first-child {
+  top: auto;
+  position: relative;
+}
+.ps_rotate_scale_o .carousel-item.active{
+  opacity: 1;
+  z-index: 2;
+  -webkit-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+  -webkit-transition: -webkit-transform 2.5s cubic-bezier(0.22,0.81,0.01,0.99) 0s, opacity cubic-bezier(0.22,0.81,0.01,0.99) 2.5s;
+  transition: transform 2.5s cubic-bezier(0.22,0.81,0.01,0.99) 0s, opacity cubic-bezier(0.22,0.81,0.01,0.99) 2.5s;
+}
+/*---------- INDICATORS CONTROL ----------*/
+.ps_indicators_ld > .carousel-indicators{
+  left: 0;
+  width: 100%;
+  bottom: 3%;
+  right: 0;
+  margin: auto;
+  display: block;
+  text-align: left;
+  padding-left: 5%;
+}
+.ps_indicators_ld > .carousel-indicators li{
+  width: 10px;
+  height: 10px;
+  margin: 0 3px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border: none;
+}
+.ps_indicators_ld > .carousel-indicators .active{
+  width: 10px;
+  height: 10px;
+  margin: 0 3px;
+  background: transparent;
+  border: 2px solid #02d871;
+}
+/*---------- SLIDE CAPTION ----------*/
+.fw_al_010_slide {
+  left: 0;
+  top: 29%;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+.fw_al_010_slide > h3 {
+  color: #ffffff;
+  font-size: 20px;
+  text-shadow: none;
+  margin: 0 0 10px 0;
+  font-weight: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+  animation-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+}
+.fw_al_010_slide > h1 {
+  color: #ffffff;
+  font-size: 59px;
+  font-weight: 600;
+  text-shadow: none;
+  margin: 0 0 10px 0;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  -webkit-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+  animation-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+}
+.fw_al_010_slide > h1 span {
+  color: #02d871;
+}
+.fw_al_010_slide > p {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  text-shadow: none;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+  animation-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+}
+.fw_al_010_slide > a {
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 10px 0;
+  text-shadow: none;
+  margin-top: 175px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 3px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-animation-delay: 1.9s;
+  animation-delay: 1.9s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+  transition: all 0.5s cubic-bezier(0.22,0.81,0.01,0.99);
+}
+.fw_al_010_slide > a:after {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 40px;
+  content: "";
+  margin: auto;
+  position: absolute;
+  background: #02d871;
+}
+
+/*------------------------------------------------------*/
+/* RESPONSIVE
+/*------------------------------------------------------*/
+
+/*---------- MEDIA 480px ----------*/
+@media only screen and (max-width: 320px) {
+  /*---------- SLIDE CAPTION ----------*/
+  .fw_al_010_slide {
+    top: 5%;
+  }
+  .fw_al_010_slide > h3 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+  }
+  .fw_al_010_slide > h1 {
+    font-size: 22px;
+    margin: 0 0 5px 0;
+  }
+  .fw_al_010_slide > p {
+    font-size: 14px;
+  }
+  .fw_al_010_slide > a {
+    margin-top: 0;
+  }
+}
+
+/*---------- MEDIA 481px - 600px ----------*/
+@media (min-width: 480px) and (max-width: 576px) {
+  .fw_al_010_slide > h1 {
+    font-size: 30px;
+  }
+  .fw_al_010_slide > p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .fw_al_010_slide > h1 {
+    font-size: 20px;
+  }
+  .fw_al_010_slide > p {
+    font-size: 10px;
+  }
+}
+@media (min-width: 576px) and (max-width: 610px) {
+  /*---------- SLIDE CAPTION ----------*/
+  .fw_al_010_slide {
+    top: 29%;
+  }
+  .fw_al_010_slide > h1 {
+    font-size: 40px;
+  }
+  .fw_al_010_slide > a {
+    margin-top: 0;
+  }
+}
+
+/*---------- MEDIA 601px - 767px ----------*/
+@media (min-width: 601px) and (max-width: 767px) {
+  /*---------- SLIDE CAPTION ----------*/
+  .fw_al_010_slide > a {
+    margin-top: 10px;
+  }
+}
+
+/*---------- MEDIA 768px - 875px ----------*/
+@media (min-width: 768px) and (max-width: 875px) {
+  /*---------- SLIDE CAPTION ----------*/
+  .fw_al_010_slide > a {
+    margin-top: 50px;
+  }
+}
+
+/*--------------------------------------------*/
+/* SLIDING TIMING FUNCTIONS
+/*--------------------------------------------*/
+/*----- ps_ease -----*/
+.ps_ease .carousel-item{
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/*----- ps_easeInOut -----*/
+.ps_easeInOut .carousel-item{
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/*----- ps_speedy -----*/
+.ps_speedy .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(0,1,0,1);
+  transition-timing-function: cubic-bezier(0,1,0,1);
+}
+/*----- ps_slowSpeedy -----*/
+.ps_slowSpeedy .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(0.3,1,0,1);
+  transition-timing-function: cubic-bezier(0.3,1,0,1);
+}
+/*----- ps_easeOutInCubic -----*/
+.ps_easeOutInCubic .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+  transition-timing-function: cubic-bezier(0.22,0.81,0.01,0.99);
+}
+/*----- ps_swing -----*/
+.ps_swing .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.02,.01,.47,1);
+  transition-timing-function: cubic-bezier(.02,.01,.47,1);
+}
+/*----- ps_easeOutCubic -----*/
+.ps_easeOutCubic .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+/*----- ps_easeInOutCubic -----*/
+.ps_easeInOutCubic .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.645,.045,.355,1);
+  transition-timing-function: cubic-bezier(.645,.045,.355,1);
+}
+/*----- ps_easeOutCirc -----*/
+.ps_easeOutCirc .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.075,.82,.165,1);
+  transition-timing-function: cubic-bezier(.075,.82,.165,1);
+}
+/*----- ps_easeOutExpo -----*/
+.ps_easeOutExpo .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.19,1,.22,1);
+  transition-timing-function: cubic-bezier(.19,1,.22,1);
+}
+/*----- ps_easeInQuad -----*/
+.ps_easeInQuad .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.55,.085,.68,.53);
+  transition-timing-function: cubic-bezier(.55,.085,.68,.53);
+}
+/*----- ps_easeOutQuad -----*/
+.ps_easeOutQuad .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+}
+/*----- ps_easeInOutQuad -----*/
+.ps_easeInOutQuad .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+  transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+}
+/*----- ps_easeOutQuart -----*/
+.ps_easeOutQuart .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.165,.84,.44,1);
+  transition-timing-function: cubic-bezier(.165,.84,.44,1);
+}
+/*----- ps_easeInOutQuart -----*/
+.ps_easeInOutQuart .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.77,0,.175,1);
+  transition-timing-function: cubic-bezier(.77,0,.175,1);
+}
+/*----- ps_easeOutQuint -----*/
+.ps_easeOutQuint .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.23,1,.32,1);
+  transition-timing-function: cubic-bezier(.23,1,.32,1);
+}
+/*----- ps_easeInSine -----*/
+.ps_easeInSine .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.47,0,.745,.715);
+  transition-timing-function: cubic-bezier(.47,0,.745,.715);
+}
+/*----- ps_easeOutSine -----*/
+.ps_easeOutSine .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.39,.575,.565,1);
+  transition-timing-function: cubic-bezier(.39,.575,.565,1);
+}
+/*----- ps_easeInOutSine -----*/
+.ps_easeInOutSine .carousel-item{
+  -webkit-transition-timing-function: cubic-bezier(.445,.05,.55,.95);
+  transition-timing-function: cubic-bezier(.445,.05,.55,.95);
+}

@@ -1,0 +1,105 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="slick.css">
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<!-- 
+
+The mark-up is simple. I did a little reading online about the correct mark-up for citations and the proper use of blockquotes.
+From what I gather, the first slider seems to be the more valid mark-up.  I simply created sections with the class "quotes" as the
+container for the testimanials.  Ken's script reads through the list and formats everything for you.  Pretty sweet.
+In this example I am using the default settings and style sheet.  The great thing about Ken's scripts is that you
+rotate any kind of content very simply. 
+
+To prevent the flashing of unstyles content, I placed a CSS  snippet in the head of the HTML document.
+
+<style type="text/css">
+.no-fouc {
+	display: none;
+}
+</style>
+
+On Document Ready, I simply use jQuery to remove the class.
+
+$( document ).ready(function() {
+$('.no-fouc').removeClass('no-fouc');
+});
+
+
+Visit Ken's site for the source code and docs. 
+
+Source: https://kenwheeler.github.io/slick/
+
+-->
+
+
+<!-- Speech Bubble Slider -->
+<center>
+  <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
+    <h2><span class="highlight-text">TESTIMONIALS</span></h2>
+    <a href="feedback.php" target="_blank">
+    <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Want to add some? Thanks.</p></a>
+</div>
+<section class="quotes">
+  <div class="bubble">
+    <blockquote>Excellent technical skills !!!! Patient, Friendly, and Very Pleasing to work with. Magnificent Quality !!! I will order again soon !!! Highly Recommended !!!!
+      <br> <br><img src="5star.png" style="height: 70px;border-radius: 100px;" alt="">
+    </blockquote>
+    <div></div>
+    <cite>njbehave</cite> </div>
+  <div class="bubble">
+    <blockquote>Best service I am very happy to receive this service. I am Mohammad Sheikh Saadi from Bangladesh. Says many prayers for you, I am very happy 
+      <br> <br><img src="5star.png" style="height: 70px;border-radius: 100px;" alt="">
+    </blockquote>
+    <div></div>
+    <cite>mdshaikhsadi</cite> </div>
+  <div class="bubble">
+    <blockquote>Looks great, did a fantastic job. Very professional and fast, thank you very much.
+      <br> <br><img src="5star.png" style="height: 70px;border-radius: 100px;" alt="">
+    </blockquote>
+    <div></div>
+    <cite>puertorico265</cite> </div>
+  <div class="bubble">
+    <blockquote>Awesome ASO! Hard work and excellent guy - will defenitely use his service again. Thank you!
+      <br> <br><img src="5star.png" style="height: 70px;border-radius: 100px;" alt="">
+    </blockquote>
+    <div></div>
+    <cite>viktorasguoga</cite> </div>
+    <div class="bubble">
+      <blockquote>Outstanding experience, got my documents within 12 hours. This man is even working at night time. 10/10 will order again!
+       <br> <br><img src="5star.png" style="height: 70px;border-radius: 100px;" alt="">
+      </blockquote>
+      
+      <div></div>
+      
+      <cite><!--<img src="https://i.ytimg.com/vi/NhpzYVoMhVY/hqdefault.jpg" style="width: 30px;height: 30px;border-radius: 100px;" alt="">&nbsp;-->jeffreydevos</cite> </div>
+</section><br><br>
+<a href="https://bit.ly/2yNkpnd" target="_blank">Check Out More Reviews on Fiverr</a>
+</center>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="slick.js"></script>
+<script>
+  $('.quotes').slick({
+  dots: true,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 6000,
+  speed: 800,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
+
+
+$( document ).ready(function() {
+$('.no-fouc').removeClass('no-fouc');
+});
+</script>
+
+</body>
+</html>
